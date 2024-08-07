@@ -1,9 +1,8 @@
 # Создание журнала с нового студента
 students = input('Впишите имя студента: ', )
 grades = [int(y) for y in input('Впишите оценки студента (через пробел) : ').split()]
-students_list = sorted(students)
 first_average_score = sum(grades) / len(grades)
-average_score = {students_list: first_average_score}
+average_score = {students: first_average_score}
 print(average_score)
 
 # добаление нового студента с оценками
